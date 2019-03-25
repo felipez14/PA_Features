@@ -36,7 +36,3 @@ Feature: Login da PA
     And Eu digito meu usuário inválido
     And Clico no botão Solicitar nova senha
     Then Recebo uma mensagem informando que o usuário não foi encontrado
-
-  Scenario: teste
-    Given teste
-    Then teste
