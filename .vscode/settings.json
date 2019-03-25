@@ -1,0 +1,7 @@
+{
+    "editor.snippetSuggestions": "none",
+    "editor.acceptSuggestionOnEnter": "smart",
+    "workbench.settings.openDefaultSettings": false,
+    "javascript.suggestionActions.enabled": false,
+    "typescript.suggestionActions.enabled": false
+}
