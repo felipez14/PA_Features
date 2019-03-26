@@ -1,6 +1,6 @@
 describe 'Administração > Perfil' do
     before(:each) do
-        visit '/'
+        visit 'http://wcd-qa.treetecnologia.com.br'
         
         fill_in placeholder: 'E-mail', with: @login
         fill_in placeholder: 'Senha', with: @senha
@@ -90,7 +90,7 @@ describe 'Administração > Perfil' do
         find(:xpath, "//mat-icon[contains(text(),'menu')]").click
         find(:xpath, "//span[contains(text(),'Administração')]").click
         find(:xpath, "//a[contains(text(),'Perfil')]").click
-        find(:xpath, "/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[1]/app-profile-list[1]/lda-table[1]/mat-card[1]/div[1]/mat-table[1]/mat-row[3]/mat-cell[4]/a[1]/mat-icon[1]").click
+        find(:xpath, "/html[1]/body[1]/app-root[1]/div[1]/app-layout[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[1]/app-profile-list[1]/lda-table[1]/mat-card[1]/div[1]/mat-table[1]/mat-row[4]/mat-cell[4]/a[1]/mat-icon[1]").click
 
         find(:xpath, "//button[@class='button-excluir button button-primary ng-star-inserted']").click
         find(:xpath, "//button[contains(text(),'OK')]").click
