@@ -1,5 +1,3 @@
-#Lenguage: pt
-
 Feature: Funcionalidade de pesquisa
     Funcionalidade que permite realizar a pesquisa de cursos e documentos na Plataforma Adaptativa
 

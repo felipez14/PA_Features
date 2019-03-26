@@ -1,4 +1,3 @@
-#Language: pt
 Feature: Login da PA
   Tela de login da Plataforma Adaptativa
 
