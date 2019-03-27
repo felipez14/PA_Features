@@ -18,7 +18,7 @@ describe 'CRUD Aluno' do
         find(:xpath, "//a[contains(text(),'Novo Aluno')]").click
 
         find(:xpath, "//ng-select[@id='select1']").click
-        find(:xpath, "/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[1]/app-aluno-register[1]/mat-card[1]/form[1]/div[1]/mat-tab-group[1]/div[1]/mat-tab-body[1]/div[1]/app-dados-basicos-pessoa[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ng-select[1]/ng-dropdown-panel[1]/div[1]/div[2]/div[1]").click
+        find(:xpath, "/html[1]/body[1]/app-root[1]/div[1]/app-layout[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[1]/app-aluno-register[1]/mat-card[1]/form[1]/div[1]/mat-tab-group[1]/div[1]/mat-tab-body[1]/div[1]/app-dados-basicos-pessoa[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ng-select[1]/ng-dropdown-panel[1]/div[1]/div[2]/div[1]/span[1]").click
 
         nova_janela = open_new_window
 
@@ -40,7 +40,7 @@ describe 'CRUD Aluno' do
         fill_in placeholder: 'E-mail', with: 'alunoteste' + Date.today.strftime('%Y%m%d') + Time.now.strftime("%H%M%S") + '@gmail.com'
         fill_in placeholder: 'Apelido', with: 'Teste'
 
-        find(:xpath, "/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[1]/app-aluno-register[1]/mat-card[1]/form[1]/div[1]/mat-tab-group[1]/div[1]/mat-tab-body[1]/div[1]/app-dados-basicos-pessoa[1]/div[1]/div[1]/div[1]/div[6]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]").click
+        find(:xpath, "/html[1]/body[1]/app-root[1]/div[1]/app-layout[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[1]/app-aluno-register[1]/mat-card[1]/form[1]/div[1]/mat-tab-group[1]/div[1]/mat-tab-body[1]/div[1]/app-dados-basicos-pessoa[1]/div[1]/div[1]/div[1]/div[6]/div[1]/ng-select[1]/div[1]").click
         find(:xpath, "//span[contains(text(),'Masculino')]").click
 
         fill_in placeholder: 'Selecione...', with: '01/01/2000'

@@ -1,4 +1,4 @@
-Feature: Funcionalidade de pesquisa
+Feature: Pesquisa
     Funcionalidade que permite realizar a pesquisa de cursos e documentos na Plataforma Adaptativa
 
     Background: 

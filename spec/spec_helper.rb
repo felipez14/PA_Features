@@ -1,5 +1,6 @@
 require 'capybara'
 require 'capybara/rspec'
+require 'selenium-webdriver'
 require 'site_prism'
 
 RSpec.configure do |config|
