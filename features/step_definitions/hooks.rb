@@ -1,4 +1,4 @@
-Given("Acesso o ambiente da Plataforma adaptativa") do
+Given("Acessar o ambiente da Plataforma adaptativa") do
     visit '/'
 
     fill_in placeholder: 'E-mail', with: @login

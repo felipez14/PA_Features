@@ -2,7 +2,7 @@ Feature: Pesquisa
     Funcionalidade que permite realizar a pesquisa de cursos e documentos na Plataforma Adaptativa
 
     Background: 
-        Given Acesso o ambiente da Plataforma adaptativa
+        Given Acessar o ambiente da Plataforma adaptativa
 
     Scenario: Realizando a pesquisa de um manual técnico
         When Pesquiso sobre um manual técnico

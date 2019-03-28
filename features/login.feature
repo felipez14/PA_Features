@@ -2,34 +2,34 @@ Feature: Login da PA
   Tela de login da Plataforma Adaptativa
 
   Background: 
-    Given Acesso o site da Plataforma adaptativa
+    Given Acessar o site da Plataforma adaptativa
 
   Scenario: Realizando login na PA com sucesso
-    When Eu digito meu usuário previamente cadastrado
-    And Digito minha senha corretamente
-    And Clico no botão Acessar
-    Then Acesso o ambiente da plataforma com sucesso
+    When Digitar um usuário previamente cadastrado
+    And Digitar a senha corretamente
+    And Clicar no botão Acessar
+    Then Acessar o ambiente da plataforma com sucesso
 
   Scenario: Tentativa de login com e-mail inválido
-    When Eu digito meu usuário inválido
-    And Digito minha senha corretamente
-    And Clico no botão Acessar
-    Then Recebo uma mensagem informando que o usuário não foi encontrado
+    When Digitar um usuário inválido
+    And Digitar a senha corretamente
+    And Clicar no botão Acessar
+    Then Deve aparecer uma mensagem informando que o usuário não foi encontrado
 
   Scenario: Tentativa de login com senha inválida
-    When Eu digito meu usuário previamente cadastrado
-    And Digito uma senha inválida
-    And Clico no botão Acessar
-    Then Recebo uma mensagem informando o acesso não autorizado
+    When Digitar um usuário previamente cadastrado
+    And Digitar uma senha inválida
+    And Clicar no botão Acessar
+    Then Deve aparecer uma mensagem informando o acesso não autorizado
 
   Scenario: Esqueci minha senha
-    When Clico no botão Esqueceu a senha?
-    And Eu digito meu usuário previamente cadastrado
-    And Clico no botão Solicitar nova senha
-    Then Recebo uma mensagem dizendo que as informações para a troca da senha foram enviadas para meu e-mail
+    When Clicar no botão Esqueceu a senha?
+    And Digitar um usuário previamente cadastrado
+    And Clicar no botão Solicitar nova senha
+    Then Deve aparecer uma mensagem dizendo que as informações para a troca da senha foram enviadas para o e-mail
 
   Scenario: Tentativa de recuperar a senha com um e-mail não cadastrado
-    When Clico no botão Esqueceu a senha?
-    And Eu digito meu usuário inválido
-    And Clico no botão Solicitar nova senha
-    Then Recebo uma mensagem informando que o usuário não foi encontrado
+    When Clicar no botão Esqueceu a senha?
+    And Digitar um usuário inválido
+    And Clicar no botão Solicitar nova senha
+    Then Deve aparecer uma mensagem informando que o usuário não foi encontrado
