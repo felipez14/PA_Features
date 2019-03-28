@@ -25,6 +25,6 @@ end
 Capybara.app_host = 'http://wcd-qa.treetecnologia.com.br'
 
 RSpec.configure do |config|
-  config.before(:example) { @login = 'englipe7989+5@gmail.com' }
+  config.before(:example) { @login = 'felipebessa@network-source.com' }
   config.before(:example) { @senha = '123456' }
 end
