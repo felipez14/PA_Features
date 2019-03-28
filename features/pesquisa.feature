@@ -5,13 +5,13 @@ Feature: Pesquisa
         Given Acessar o ambiente da Plataforma adaptativa
 
     Scenario: Realizando a pesquisa de um manual técnico
-        When Pesquiso sobre um manual técnico
-        Then Recebo os resultados do manual pesquisado
+        When Pesquisar sobre um manual técnico
+        Then Receber os resultados do manual pesquisado
 
     Scenario: Realizando a pesquisa de um curso
-        When Pesquiso sobre um curso
-        Then Recebo os resultados do curso pesquisado
+        When Pesquisar sobre um curso
+        Then Receber os resultados do curso pesquisado
 
     Scenario: Realizando uma pesquisa através do campo presente na tela de inicio
-        When Faço uma pesquisa qualquer através do campo presente na tela de inicio
-        Then Sou redirecionado para a tela de resultados contendo os dados da pesquisa feita
+        When Fazer uma pesquisa qualquer através do campo presente na tela de inicio
+        Then Ser redirecionado para a tela de resultados contendo os dados da pesquisa feita
