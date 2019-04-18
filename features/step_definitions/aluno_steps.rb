@@ -3,9 +3,10 @@ Given("Clicar no botão Novo aluno e acessar a tela de criação de aluno") do
 end
 
 When("Clicar em Acadêmico > Alunos no menu lateral") do
-
     page.driver.browser.manage.window.resize_to(1920,1080)
+
     find(:xpath, "//span[contains(text(),'Acadêmico')]").click
+    sleep 1
     find(:xpath, "//a[contains(text(),'Alunos')]").click
 end
 
@@ -26,6 +27,10 @@ When("Preencher todos os dados necessários para o cadastro de um novo aluno") d
     nova_janela.close
 
     find(:xpath, "//input[@placeholder='Número']").send_keys [:control, 'v']
+
+    find(:xpath, "//input[@placeholder='Nome']").click
+
+    sleep 3
     
     fill_in placeholder: 'Nome', with: 'Aluno de teste ' + Date.today.strftime('%Y%m%d') + Time.now.strftime("%H%M%S")
     
@@ -96,4 +101,6 @@ end
 Then("O aluno será cadastrado com sucesso") do
 
     expect(page.find(:xpath, "//div[@class='toast-success toast ng-trigger ng-trigger-flyInOut']")).to have_content 'Criado com sucesso'
+
+    page.driver.browser.manage.window.resize_to(950,1080)
 end
