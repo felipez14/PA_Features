@@ -2,6 +2,8 @@ require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'capybara'
 require 'capybara/rspec'
+require 'faker'
+require 'cpf_faker'
 
 Capybara.javascript_driver = :webkit
 
@@ -24,11 +26,11 @@ Capybara.configure do |config|
   config.default_max_wait_time = 15
 end
 
-Capybara.app_host = 'http://wcd-qa.treetecnologia.com.br'
+Capybara.app_host = 'https://qa-plataforma.isvor.com.br/'
 
 RSpec.configure do |config|
   Before do
-    @login = 'felipebessa@maillink.top'
+    @login = 'felipez7989@gmail.com'
     @senha = '123456'
   end
 end

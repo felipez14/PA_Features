@@ -20,7 +20,7 @@ Feature: Login da PA
     When Digitar um usuário previamente cadastrado
     And Digitar uma senha inválida
     And Clicar no botão Acessar
-    Then Deve aparecer uma mensagem informando o acesso não autorizado
+    Then Deve aparecer uma mensagem informando a senha inválida
 
   Scenario: Esqueci minha senha
     When Clicar no botão Esqueceu a senha?

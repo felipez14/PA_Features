@@ -85,7 +85,7 @@ end
   
 When("Clicar em editar um perfil que está associado a algum usuário") do
 
-    find(:xpath, "//a[@href='/auth/profiles/1']//mat-icon[@class='mat-icon material-icons'][contains(text(),'edit')]").click
+    visit 'https://qa-plataforma.isvor.com.br/management/profiles/1'
 end
 
 Then("Deve aparecer uma notificação dizendo que não é possível inativar um perfil que tenha um usuário ativo já associado") do

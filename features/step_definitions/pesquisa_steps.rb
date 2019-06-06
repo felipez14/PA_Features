@@ -7,7 +7,7 @@ When("Pesquisar sobre um manual técnico") do
 end 
 
 When("Pesquisar sobre um curso") do
-    fill_in placeholder: 'Pesquise cursos, manuais, arquivos...', with: 'Curso'
+    fill_in placeholder: 'Pesquise cursos, manuais, arquivos...', with: '1'
 
     find(:xpath, "//mat-icon[contains(text(),'search')]").click
     sleep 1

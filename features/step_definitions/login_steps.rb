@@ -38,8 +38,8 @@ Then("Deve aparecer uma mensagem informando que o usuário não foi encontrado")
     expect(page.find(:xpath, "//div[@class='toast-error toast ng-trigger ng-trigger-flyInOut']")).to have_content 'Usuário não encontrado'
 end
 
-Then("Deve aparecer uma mensagem informando o acesso não autorizado") do
-    expect(page.find(:xpath, "//div[@class='toast-error toast ng-trigger ng-trigger-flyInOut']")).to have_content 'Acesso não autorizado.'
+Then("Deve aparecer uma mensagem informando a senha inválida") do
+    expect(page.find(:xpath, "//div[@class='toast-error toast ng-trigger ng-trigger-flyInOut']")).to have_content 'Email ou senha inválido'
 end
 
 Then("Deve aparecer uma mensagem dizendo que as informações para a troca da senha foram enviadas para o e-mail") do

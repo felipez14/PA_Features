@@ -15,18 +15,18 @@ When("Preencher todos os dados necessários para o cadastro de um novo aluno") d
     find(:xpath, "//ng-select[@id='select1']").click
     find(:xpath, "//span[contains(text(),'Brasil')]").click
 
-    nova_janela = open_new_window
+    # nova_janela = open_new_window
 
-        within_window nova_janela do
-            visit 'https://www.4devs.com.br/gerador_de_cpf'
+    #     within_window nova_janela do
+    #         visit 'https://www.4devs.com.br/gerador_de_cpf'
 
-            find(:xpath, "//input[@id='bt_gerar_cpf']").click
-            find(:xpath, "//span[@class='clipboard-copy']").click
-        end
+    #         find(:xpath, "//input[@id='bt_gerar_cpf']").click
+    #         find(:xpath, "//span[@class='clipboard-copy']").click
+    #     end
 
-    nova_janela.close
+    # nova_janela.close
 
-    find(:xpath, "//input[@placeholder='Número']").send_keys [:control, 'v']
+    find(:xpath, "//input[@placeholder='Número']").set(Faker::CPF.numeric)
 
     find(:xpath, "//input[@placeholder='Nome']").click
 
