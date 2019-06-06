@@ -85,7 +85,10 @@ end
   
 When("Clicar em editar um perfil que está associado a algum usuário") do
 
-    visit 'https://qa-plataforma.isvor.com.br/management/profiles/1'
+    user = find('.ng-star-inserted .conteudo #titlePage')
+    expect(user.text).to have_text 'Felipe Bessa'
+
+    visit 'management/profiles/1'
 end
 
 Then("Deve aparecer uma notificação dizendo que não é possível inativar um perfil que tenha um usuário ativo já associado") do

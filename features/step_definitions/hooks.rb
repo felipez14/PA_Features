@@ -1,5 +1,5 @@
 Given("Acessar o ambiente da Plataforma adaptativa") do
-    visit '/'
+    visit ''
 
     fill_in placeholder: 'E-mail', with: @login
     fill_in placeholder: 'Senha', with: @senha
