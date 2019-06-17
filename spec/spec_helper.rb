@@ -2,6 +2,8 @@ require 'capybara'
 require 'capybara/rspec'
 require 'selenium-webdriver'
 require 'site_prism'
+require 'faker'
+require 'cpf_faker'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

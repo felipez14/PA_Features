@@ -26,7 +26,7 @@ Capybara.configure do |config|
   config.default_max_wait_time = 15
 end
 
-Capybara.app_host = 'https://qa-plataforma.isvor.com.br/'
+Capybara.app_host = 'https://origin-fca-academy-hmg-webapp-master.fcalatam.com.br/'
 
 RSpec.configure do |config|
   Before do

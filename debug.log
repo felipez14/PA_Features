@@ -1,9 +1,0 @@
-[0423/104158.865:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
-[0423/104158.871:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
-[0423/104158.871:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
-[0423/104158.871:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
-[0423/104158.871:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
-[0423/104158.871:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
-[0423/104158.871:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
-[0423/104158.871:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
-[0423/104158.886:ERROR:exception_snapshot_win.cc(98)] thread ID 1840 not found in process
