@@ -1,6 +1,11 @@
-Given("Acessar o ambiente da Plataforma adaptativa") do
-    visit ''
+require 'base64'
 
+Before do
+    visit ''
+end
+
+Given("Acessar o ambiente da Plataforma adaptativa") do
+    
     fill_in placeholder: 'E-mail', with: @login
     fill_in placeholder: 'Senha', with: @senha
 

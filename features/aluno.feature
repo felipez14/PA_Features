@@ -3,10 +3,9 @@ Feature: Gestão de Aluno
 
     Background: 
         Given Acessar o ambiente da Plataforma adaptativa
-        When Clicar em Acadêmico > Alunos no menu lateral
 
     Scenario: Criando um aluno com sucesso (gerando credenciais de acesso)
-        Given Clicar no botão Novo aluno e acessar a tela de criação de aluno
+        Given Acessar a tela de Novo aluno
         When Preencher todos os dados necessários para o cadastro de um novo aluno
         And Clicar no botão Salvar
         Then O aluno será cadastrado com sucesso

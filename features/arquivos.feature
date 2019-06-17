@@ -1,8 +1,10 @@
 Feature: Tela de arquivos e visualizador de PDF
     Funcionalidade que permite buscar e visualizar os arquivos na Plataforma adaptativa
 
-    Scenario: Acessando um arquivo 
+    Background: 
         Given Acessar o ambiente da Plataforma adaptativa
+
+    Scenario: Acessando um arquivo 
         When Clicar em Arquivos no menu lateral
         And Ver na tela todos os arquivos disponiveis na Plataforma adaptativa
         And Selecionar o arquivo desejado
