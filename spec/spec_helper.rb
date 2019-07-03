@@ -23,9 +23,11 @@ Capybara.configure do |config|
   config.default_max_wait_time = 15
 end
 
-Capybara.app_host = 'http://wcd-qa.treetecnologia.com.br'
+Capybara.page.driver.browser.manage.window.resize_to(1850,1070)
+
+Capybara.app_host = 'https://qa-plataforma.isvor.com.br'
 
 RSpec.configure do |config|
-  config.before(:example) { @login = 'englipe7989+5@gmail.com' }
+  config.before(:example) { @login = 'felipez7989@gmail.com' }
   config.before(:example) { @senha = '123456' }
 end

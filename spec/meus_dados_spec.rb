@@ -8,6 +8,8 @@ describe 'Tela de Meus dados' do
         fill_in placeholder: 'Senha', with: @senha
 
         click_button 'Acessar'
+
+        expect(page.find(:xpath, "//h1[@id='titlePage']")) 
     end
 
     it 'Preenchendo todos os dados', :todosdados do

@@ -7,12 +7,13 @@ describe 'Tela de arquivos e visualizador de PDF' do
         fill_in placeholder: 'Senha', with: @senha
 
         click_button 'Acessar'
+
+        expect(page.find(:xpath, "//h1[@id='titlePage']")) 
     end
 
     it 'Abrindo um arquivo' do
 
-        find(:xpath, "//mat-icon[contains(text(),'menu')]").click
-        find(:xpath, "//span[contains(text(),'Arquivos')]").click
+        visit '/files'
 
         find(:xpath, "//div[@class='ng-input']//input[@type='text']").click
         find(:xpath, "//span[@class='ng-option-label ng-star-inserted']").click

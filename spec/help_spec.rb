@@ -9,6 +9,8 @@ describe 'Help' do
         fill_in placeholder: 'Senha', with: @senha
 
         click_button 'Acessar'
+
+        expect(page.find(:xpath, "//h1[@id='titlePage']")) 
     end
 
     it 'enviando uma mensagem no help', :help do
