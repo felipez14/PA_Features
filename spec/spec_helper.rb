@@ -1,11 +1,8 @@
-require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'capybara'
 require 'capybara/rspec'
 require 'faker'
 require 'cpf_faker'
-
-Capybara.javascript_driver = :webkit
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
@@ -26,11 +23,9 @@ Capybara.configure do |config|
   config.default_max_wait_time = 15
 end
 
-Capybara.app_host = 'https://origin-fca-academy-hmg-webapp-master.fcalatam.com.br/'
+Capybara.app_host = 'http://wcd-qa.treetecnologia.com.br'
 
 RSpec.configure do |config|
-  Before do
-    @login = 'felipez7989@gmail.com'
-    @senha = '123456'
-  end
+  config.before(:example) { @login = 'englipe7989+5@gmail.com' }
+  config.before(:example) { @senha = '123456' }
 end
